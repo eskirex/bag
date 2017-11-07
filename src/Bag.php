@@ -101,9 +101,9 @@ class Bag
      * Get method
      *
      * @param string $name
-     * @return bool|array
+     * @return array|bool
      */
-    protected function get($name): array
+    protected function get($name)
     {
         return $this->has($name) !== false
             ? $this->notation->get($name)
@@ -115,7 +115,7 @@ class Bag
      * Check method
      *
      * @param string $name
-     * @return bool
+     * @return array|bool
      */
     protected function has($name)
     {
@@ -129,7 +129,7 @@ class Bag
      * @param string $name
      * @return bool
      */
-    protected function clear($name)
+    protected function clear($name): bool
     {
         $return = $this->has($name) !== false
             ? $this->notation->clear($name)
