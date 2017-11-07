@@ -16,3 +16,4 @@ class BagProxy extends Bag
 {
 
 }
+
