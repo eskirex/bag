@@ -1,0 +1,29 @@
+{
+  "name": "eskirex/bag",
+  "description": "Bag",
+  "version": "1.0.0-dev",
+  "keywords": [
+    "session",
+    "eskirex"
+  ],
+  "homepage": "http://www.eskirex.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eskirex",
+      "email": "hello@eskirex.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "adbario/php-dot-notation": "^2.0"
+  },
+  "config": {
+    "minimum-stability": "dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eskirex\\": "src/"
+    }
+  }
+}
